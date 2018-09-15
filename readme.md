@@ -4,7 +4,7 @@ IntelliJ IDEA in Docker
 
 ## Detailed Information
 
-OS: Ubuntu 16.04
+OS: Ubuntu 18.04
 
 Desktop Environment: Xfce
 
