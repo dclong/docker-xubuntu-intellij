@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-if [[ ! -d $HOME/.IdeaIC2017.2 ]]; then
-    mv /settings/IdeaIC2017.2 $HOME/.IdeaIC2017.2
-    chown -R $DOCKER_USER:$DOCKER_GROUP $HOME/.IdeaIC2017.2
+if [[ ! -d $HOME/.IdeaIC2018.2 ]]; then
+    mv /settings/IdeaIC2018.2 $HOME/.IdeaIC2018.2
+    chown -R $DOCKER_USER:$DOCKER_GROUP $HOME/.IdeaIC2018.2
 fi
 
 if [[ ! -f $HOME/.m2/settings.xml ]]; then
