@@ -1,4 +1,4 @@
-FROM dclong/xubuntu-scala
+FROM dclong/xubuntu-scala:18.04
 
 RUN add-apt-repository ppa:mmk2410/intellij-idea \
     && apt-get update \
