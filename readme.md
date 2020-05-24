@@ -44,8 +44,8 @@ docker run -d \
     -e DOCKER_USER_ID=`id -u` \
     -e DOCKER_USER=`id -un` \
     -e DOCKER_PASSWORD=`id -un` \
-    -v /wwwroot:/wwwroot \
-    -v $HOME:/`id -un` \
+    -v "$(pwd)":/workdir \
+    -v "$(dirname $HOME)":/home_host \
     --cap-add=SYS_PTRACE \
     dclong/xubuntu-intellij
 ```
@@ -57,9 +57,9 @@ docker run -d \
     -e DOCKER_USER_ID=`id -u` \
     -e DOCKER_USER=`id -un` \
     -e DOCKER_PASSWORD=`id -un` \
-    -v /wwwroot:/wwwroot \
+    -v "$(pwd)":/workdir \
+    -v "$(dirname $HOME)":/home_host \
     -v /path_to_IdeaIC2017.2:/settings/IdeaIC2017.2 \
-    -v $HOME:/`id -un` \
     --cap-add=SYS_PTRACE \
     dclong/xubuntu-intellij
 ```
